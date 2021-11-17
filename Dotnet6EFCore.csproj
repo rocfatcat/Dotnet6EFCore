@@ -16,4 +16,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Using Include="Microsoft.EntityFrameworkCore"></Using>
+    <Using Include="Dotnet6EFCore.Model"></Using>
+  </ItemGroup>
+
 </Project>

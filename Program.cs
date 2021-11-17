@@ -6,6 +6,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<EFCore6DBContext>( options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EFCore6DBConnectString")) 
+);
 
 var app = builder.Build();
 

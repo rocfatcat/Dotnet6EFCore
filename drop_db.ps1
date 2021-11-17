@@ -3,5 +3,5 @@ if ([string]::IsNullOrWhiteSpace($name)) {
     $name = "Dotnet_EFCore_6"
 }
 $query = "drop Database $name" #// 建立資料庫的指令
-echo $query
+Write-Output $query
 sqlcmd -S '(LocalDb)\MSSQLLocalDB' -q $query #/

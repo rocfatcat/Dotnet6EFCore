@@ -6,6 +6,6 @@ namespace Dotnet6EFCore.Model
         public string Name { get; set; } = string.Empty;
         public string Gender { get; set; } = string.Empty;
         public int Age { get; set; }
-        public Heart Heart { get; set; } = new();
+        public virtual Heart Heart { get; set; }
     }
 }

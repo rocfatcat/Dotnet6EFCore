@@ -9,6 +9,5 @@ namespace Dotnet6EFCore.Model
         public int Heartbeat { get; set; }
         public int BolldPressure { get; set; }
 
-        public Human Human { get; set; } = new();
     }
 }

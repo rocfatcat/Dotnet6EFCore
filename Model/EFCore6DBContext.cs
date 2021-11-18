@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -31,5 +32,8 @@ namespace Dotnet6EFCore.Model
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public DbSet<Human> Humans => Set<Human>();
+        public DbSet<Heart> Hearts => Set<Heart>();
     }
 }

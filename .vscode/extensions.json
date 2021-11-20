@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-dotnettools.csharp",
+        "shd101wyy.markdown-preview-enhanced",
+        "doggy8088.netcore-extension-pack",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "humao.rest-client"
+    ]
+}

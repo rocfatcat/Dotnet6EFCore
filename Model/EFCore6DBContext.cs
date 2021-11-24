@@ -31,5 +31,8 @@ namespace Dotnet6EFCore.Model
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public DbSet<User> Users => Set<User>();
+        public DbSet<Meeting> Meetings => Set<Meeting>();
     }
 }

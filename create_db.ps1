@@ -1,7 +1,8 @@
-$name = Read-Host -Prompt 'Input your db name default:Dotnet_EFCore_6'
+$defaultName = (Get-Item -Path (Get-Location) |Select-Object BaseName).BaseName
+$name = (Read-Host -Prompt "Input your db name default:$defaultName")
 if ([string]::IsNullOrWhiteSpace($name))
 {
-    $name = "Dotnet_EFCore_6"
+    $name = $defaultName
 }
 $dbname = "" + $PWD + "\$name.mdf" #// 資料庫的名稱加位置
 $query = "Create Database $name on primary (Name='$name',Filename='" + $dbname + "');" #// 建立資料庫的指令
